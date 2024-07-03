@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Gaëtan Peronnet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Gaëtan Peronnet</h1>
+            <p data-lang-fr="Développeur Gameplay et Front-End" data-lang-en="Gameplay and Front-End Developer">Développeur Gameplay et Front-End</p>
+        </div>
+        <div class="language-switcher">
+            <span class="lang-label">FR</span>
+            <label class="switch">
+                <input type="checkbox" id="language-selector">
+                <span class="slider round"></span>
+            </label>
+            <span class="lang-label">EN</span>
+        </div>
+    </header>
+    <nav>
+        <a href="#about" data-lang-fr="À propos" data-lang-en="About">À propos</a>
+        <a href="#projects" data-lang-fr="Projets" data-lang-en="Projects">Projets</a>
+        <a href="#contact" data-lang-fr="Contact" data-lang-en="Contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2 data-lang-fr="À propos de moi" data-lang-en="About Me">À propos de moi</h2>
+            <div class="about-content">
+                <img src="PERONNETGaëtan.jpg" alt="Photo de Gaëtan Peronnet" class="profile-photo">
+                <div class="about-text">
+                    <p data-lang-fr="Je m'appelle Gaëtan Peronnet. Je suis passionné par les technologies immersives et le développement informatique. Cherchant à m'expertiser en développement Gameplay et Front-End, j'aime transformer mes idées innovantes en expériences interactives captivantes. Mon parcours me permet d'apprendre à maîtriser plusieurs langages de programmation et frameworks, notamment JavaScript, Unity, Unreal, etc." data-lang-en="My name is Gaëtan Peronnet. I am passionate about immersive technologies and software development. Seeking to specialize in Gameplay and Front-End development, I enjoy transforming my innovative ideas into captivating interactive experiences. My journey allows me to learn and master several programming languages and frameworks, including JavaScript, Unity, Unreal, and more."></p>
+                    <p data-lang-fr="Je suis toujours à la recherche de nouveaux défis et opportunités pour innover. N'hésitez pas à me contacter si vous êtes intéressé par mon profil ou si vous voulez simplement échanger sur des projets passionnants." data-lang-en="I am always looking for new challenges and opportunities to innovate. Feel free to contact me if you are interested in my profile or if you just want to discuss exciting projects."></p>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <h2 data-lang-fr="Projets" data-lang-en="Projects">Projets</h2>
+            <div class="project-categories">
+                <button class="category-button" onclick="toggleCategory('unity')">Unity</button>
+                <div id="unity" class="category-content">
+                    <div class="project">
+                        <img src="AgelessRiddles.png" alt="Ageless Riddles">
+                        <div class="project-info">
+                            <h3>Ageless Riddles</h3>
+                            <p data-lang-fr="Première expérience Game Jam<br>Ce projet a été réalisé dans le cadre d'une Game Jam interne à l'école.<br> Durant ce projet, je me suis occupé de coder une énigme ainsi que toutes les UI et le système son et ajouter les différents effets sonores et musiques." data-lang-en="First Game Jam experience. This project was created as part of an internal Game Jam at school. During this project, I was responsible for coding a puzzle as well as all the UI, the sound system, and adding various sound effects and music.">Première expérience Game Jam<br>Ce projet a été réalisé dans le cadre d'une Game Jam interne à l'école.<br> Durant ce projet, je me suis occupé de coder une énigme ainsi que toutes les UI et le système son et ajouter les différents effets sonores et musiques.</p>
+                            <a href="https://github.com/Le2nyJ/AgelessRiddles" target="_blank" data-lang-fr="Voir le projet" data-lang-en="See the project">Voir le projet</a><br>
+                            <a href="https://www.youtube.com/watch?v=EfoF6nGWIe8&ab_channel=LennyJELINEK" target="_blank" data-lang-fr="Vidéo du jeu" data-lang-en="Game video">Vidéo du jeu</a><br>
+                            <a href="https://mimodev.itch.io/ageless-riddles" target="_blank" data-lang-fr="Télécharger le jeu" data-lang-en="Download the game">Télécharger le jeu</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="RPSoccer.png" alt="RP Soccer 2024">
+                        <div class="project-info">
+                            <h3>RP Soccer 2024</h3>
+                            <p data-lang-fr="Un Rocket League Like, j'ai codé le système de gravité de la balle, le système d'endurance, toute l'UI et le système son" data-lang-en="A Rocket League Like, I coded the ball gravity system, the stamina system, all the UI, and the sound system.">Un Rocket League Like, j'ai codé le système de gravité de la balle, le système d'endurance, toute l'UI et le système son.</p>
+                            <a href="https://github.com/GaetanPe/RpSoccer2024" target="_blank" data-lang-fr="Voir le projet" data-lang-en="See the project">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="ProjectIA.png" alt="Project AI">
+                        <div class="project-info">
+                            <h3>Project AI</h3>
+                            <p data-lang-fr="Ce projet a été réalisé afin de nous apprendre le behavior tree et le state machine. Je me suis occupé de l'IA de tous les ennemis et, à la demande de mes collègues, j'ai fait les petits mobs en behavior tree et les boss en state machine." data-lang-en="This project was done to teach us behavior trees and state machines. I took care of the AI for all enemies and, at the request of my colleagues, I made the small mobs using behavior trees and the bosses using state machines.">Ce projet a été réalisé afin de nous apprendre le behavior tree et le state machine. Je me suis occupé de l'IA de tous les ennemis et, à la demande de mes collègues, j'ai fait les petits mobs en behavior tree et les boss en state machine.</p>
+                            <a href="https://github.com/A007connor/ProjectIA" target="_blank" data-lang-fr="Voir le projet" data-lang-en="See the project">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="category-button" onclick="toggleCategory('unreal')">Unreal</button>
+                <div id="unreal" class="category-content">
+                    <div class="project">
+                        <img src="RunnerUE5.png" alt="Runner UE5">
+                        <div class="project-info">
+                            <h3>Runner UE5</h3>
+                            <p data-lang-fr="Ce projet a été réalisé afin d'acquérir des bases en programmation C++ sur Unreal. J'ai codé la base du gameplay, une génération procédurale, un système de vie et de collecte de pièces plus l'ajout de la distance parcourue." data-lang-en="This project was done to acquire basics in C++ programming on Unreal. I coded the base gameplay, procedural generation, a life system, and coin collection, plus adding the distance traveled.">Ce projet a été réalisé afin d'acquérir des bases en programmation C++ sur Unreal. J'ai codé la base du gameplay, une génération procédurale, un système de vie et de collecte de pièces plus l'ajout de la distance parcourue.</p>
+                            <a href="https://github.com/GaetanPe/RunnerUE5" target="_blank" data-lang-fr="Voir le projet" data-lang-en="See the project">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="category-button" onclick="toggleCategory('web')">Web</button>
+                <div id="web" class="category-content">
+                    <div class="project">
+                        
+                        <div class="project-info">
+                            <h3>Video Games Shop</h3>
+                            <p data-lang-fr="Ce projet a été réalisé sur 2 jours en utilisant pour la première fois C#/.net pour un test de niveau pour un poste chez Paris Attitude." data-lang-en="This project was completed in 2 days using C#/.net for the first time for a level test for a position at Paris Attitude.">Ce projet a été réalisé sur 2 jours en utilisant pour la première fois C#/.net pour un test de niveau pour un poste chez Paris Attitude.</p>
+                            <a href="https://github.com/GaetanPe/Site-video-games" target="_blank" data-lang-fr="Voir le projet" data-lang-en="See the project">Voir le projet</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2 data-lang-fr="Contact" data-lang-en="Contact">Contact</h2>
+            <p data-lang-fr="Vous pouvez me retrouver sur :" data-lang-en="You can find me on:">Vous pouvez me retrouver sur :</p>
+            <div class="social-links">
+                <a href="https://github.com/GaetanPe" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/ga%C3%ABtan-peronnet/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        &copy; 2024 Gaëtan Peronnet
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

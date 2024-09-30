@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #1e1e1e;
@@ -231,6 +231,42 @@ h2 {
     color: #fff;
 }
 
+/* Styles pour le carrousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
 footer {
     background-color: #333;
     color: #fff;
@@ -239,7 +275,6 @@ footer {
     width: 100%;
     margin-top: auto;
 }
-
 
 #contact p {
     text-align: center;

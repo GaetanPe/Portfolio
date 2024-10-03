@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+    font-size: 16px; /* Taille de police de base */
 }
 
 header {
@@ -105,6 +106,7 @@ nav a {
     padding: 14px 16px;
     text-decoration: none;
     display: block;
+    font-size: 1.1em; /* Taille des liens dans la navigation */
 }
 
 nav a:hover {
@@ -128,6 +130,7 @@ nav a:hover {
 h2 {
     color: #eee;
     text-align: center;
+    font-size: 2em; /* Sous-titres */
 }
 
 .about-content {
@@ -234,7 +237,7 @@ h2 {
 /* Styles pour le carrousel */
 .carousel {
     position: relative;
-    max-width: 100%; /* S'adapte à la largeur de l'écran */
+    max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -246,7 +249,7 @@ h2 {
 }
 
 .carousel-item {
-    min-width: 100%;
+    flex: 1 0 100%; /* Chaque slide prend toute la largeur de l'écran */
     box-sizing: border-box;
 }
 
@@ -275,13 +278,32 @@ h2 {
 
 /* Responsive design pour les tablettes et mobiles */
 @media (max-width: 768px) {
+    body {
+        font-size: 15px; /* Réduction générale pour les petits écrans */
+    }
+
+    h1 {
+        font-size: 2em; /* Réduire la taille du titre principal */
+    }
+
+    h2 {
+        font-size: 1.75em; /* Réduire les sous-titres */
+    }
+
+    p {
+        font-size: 0.95em; /* Ajuster la taille des paragraphes */
+    }
+
+    nav a {
+        font-size: 1em; /* Réduire la taille des liens de navigation */
+    }
+
     .carousel-button.prev, .carousel-button.next {
         padding: 8px;
     }
 
-    .carousel-slide img {
-        width: 100%;
-        height: auto;
+    .carousel-item {
+        flex: 1 0 100%; /* Un seul élément affiché par écran sur mobile */
     }
 
     .project img {
@@ -295,13 +317,32 @@ h2 {
 }
 
 @media (max-width: 480px) {
-    .carousel-button.prev, .carousel-button.next {
-        padding: 5px;
+    body {
+        font-size: 14px; /* Réduction supplémentaire pour mobile */
     }
 
-    .carousel-slide img {
-        width: 100%;
-        height: auto;
+    h1 {
+        font-size: 1.8em; /* Réduire encore le titre principal */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Ajustement des sous-titres */
+    }
+
+    p {
+        font-size: 0.9em; /* Réduction des paragraphes */
+    }
+
+    nav a {
+        font-size: 0.9em; /* Réduire les liens pour s'adapter à l'écran */
+    }
+
+    .carousel-controls {
+        top: 85%; /* Ajuste la position pour encore plus de petits écrans */
+    }
+
+    .carousel-control {
+        padding: 5px; /* Réduire davantage la taille des boutons */
     }
 
     .project img {

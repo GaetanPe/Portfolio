@@ -1,31 +1,22 @@
+// Fonction unique pour gérer le changement de langue
 function setLanguage(language) {
-    var elements = document.querySelectorAll('[data-lang-fr], [data-lang-en]');
+    const elements = document.querySelectorAll('[data-lang-fr], [data-lang-en]');
     elements.forEach(element => {
-        if (language === 'fr') {
-            element.innerHTML = element.getAttribute('data-lang-fr');
-        } else {
-            element.innerHTML = element.getAttribute('data-lang-en');
-        }
+        element.innerHTML = element.getAttribute(`data-lang-${language}`);
     });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Initialiser avec la langue par défaut (français)
     setLanguage('fr');
+
+    // Ajouter un event listener sur le sélecteur de langue
     document.getElementById('language-selector').addEventListener('change', function() {
         setLanguage(this.checked ? 'en' : 'fr');
     });
 });
 
-function toggleCategory(category) {
-    var content = document.getElementById(category);
-    if (content.style.display === "block") {
-        content.style.display = "none";
-    } else {
-        content.style.display = "block";
-    }
-}
-
- // Script pour le carrousel
+// Fonction pour le carrousel
 let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
 const totalItems = items.length;
@@ -45,14 +36,8 @@ document.getElementById('prevButton').onclick = function() {
     updateCarousel();
 };
 
-// Script pour changer de langue
-document.getElementById('language-selector').addEventListener('change', function() {
-    const langElements = document.querySelectorAll('[data-lang-fr], [data-lang-en]');
-    langElements.forEach(el => {
-        if (this.checked) {
-            el.textContent = el.getAttribute('data-lang-en');
-        }else {
-            el.textContent = el.getAttribute('data-lang-fr');
-        }
-    });
-});
+// Fonction pour gérer l'affichage des catégories
+function toggleCategory(category) {
+    const content = document.getElementById(category);
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+}

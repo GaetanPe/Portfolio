@@ -224,14 +224,14 @@ h2 {
     margin-top: 1em;
 }
 
-.social-links a {
+.social-links a, .project-link a {
     color: #555;
     text-decoration: none;
     margin: 0 0.5em;
     font-size: 1.5em;
 }
 
-.social-links a:hover {
+.social-links a:hover, .project-link a:hover {
     color: #007BFF; /* Couleur des liens sociaux au survol */
 }
 

@@ -18,39 +18,30 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff; /* Couleur claire pour le header */
     color: #333;
-    padding: 1em 0;
-    text-align: center; 
     width: 100%;
-    position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Léger ombrage */
 }
 
 .header-content {
-    padding-top: 1%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.language-switcher {
-    position: absolute;
-    top: 1em;
-    right: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .lang-label {
-    margin: 0 0.5em;
+    margin-right: 0.5em;
     font-weight: bold;
 }
 
 .switch {
     position: relative;
-    display: inline-block;
+    
     width: 60px;
     height: 34px;
 }
@@ -94,12 +85,9 @@ input:checked + .slider:before {
 }
 
 nav {
-    background-color: #ffffff; /* Navigation claire */
+    background-color: #ffffff; 
     overflow: hidden;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -144,7 +132,7 @@ h2 {
 .profile-photo {
     margin-bottom: 1em;
     width: 150px;
-    height: 200px;
+    
     border-radius: 8px;
 }
 
